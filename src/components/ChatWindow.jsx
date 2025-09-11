@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { useState } from "react";
 import ClearChatButton from "./ClearChatButton";
 import MessageInput from "./MessageInput";
@@ -6,6 +6,12 @@ import SendButton from "./SendButton"
 
 export default function ChatWindow(props) {
     const [text, setText] = useState("");
+    
+    const chatEndRef = useRef(null);
+
+    useEffect(() => {
+    chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
+    }, [props.messages]);
 
     const handleSend = () => {
         // Append
@@ -41,6 +47,7 @@ export default function ChatWindow(props) {
             </div>
           </div>
         ))}
+        <div ref={chatEndRef}/>
       </div>
 
       {/* Input area goes outside the map */}
