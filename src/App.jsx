@@ -9,12 +9,12 @@ export default function App() {
   });
 
   // DONE: Auto-scroll
-  // TODO: Responsiveness
+  // TODO: Responsiveness [END]
   // DONE: localStorage
-  // TODO: Theme Toggler
-  // TODO: Sender/Reciever
-  // TODO: ;) => 😉
-  // TODO: Date & Time (like WA)
+  // TODO: Theme Toggler [END]
+  // DONE: Sender/Reciever
+  // DONE: ;) => 😉 + Enter = Send
+  // DONE: Date & Time => HH: MM (like WA)
     
     // set items
     useEffect(() => {
