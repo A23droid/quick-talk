@@ -1,4 +1,4 @@
-# 💬 ChatApp
+# 💬 Quick Talk
 
 A sleek, responsive real-time chat application built with **React + TailwindCSS**.  
 Supports dark/light themes, smooth animations, and a modern UI optimized for desktop and mobile.
